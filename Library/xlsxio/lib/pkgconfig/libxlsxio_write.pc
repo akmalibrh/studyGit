@@ -1,0 +1,13 @@
+prefix=C:/Program Files (x86)/xlsxio
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libxlsxio_write
+Version: 0.2.36
+Description: C library for writing .xlsx files
+URL: https://github.com/brechtsanders/xlsxio
+#Requires: 
+Cflags: -I${includedir}
+Libs: -L${libdir} -lxlsxio_write -LC:/msys64/mingw64/lib -lminizip -LC:/msys64/mingw64/lib -lz 
+#Libs.private: 
